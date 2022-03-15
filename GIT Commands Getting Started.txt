@@ -246,4 +246,5 @@ remote:
 To https://github.com/Kshitijtyagi/SapientRepo.git
  * [new branch]      master -> master
 
-C:\Users\kshtyagi\Documents\GITDir>
+C:\Users\kshtyagi\Documents\GITDir>git branch
+* master
