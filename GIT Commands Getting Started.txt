@@ -248,3 +248,19 @@ To https://github.com/Kshitijtyagi/SapientRepo.git
 
 C:\Users\kshtyagi\Documents\GITDir>git branch
 * master
+
+
+C:\Users\kshtyagi\Documents\GITDir>git branch
+* master
+  secondBranch
+
+C:\Users\kshtyagi\Documents\GITDir>git checkout secondBranch
+Switched to branch 'secondBranch'
+
+C:\Users\kshtyagi\Documents\GITDir>git branch
+  master
+* secondBranch
+
+C:\Users\kshtyagi\Documents\GITDir>git status
+On branch secondBranch
+nothing to commit, working tree clean
