@@ -159,4 +159,91 @@ C:\Users\kshtyagi\Documents\GITDir>git remote -v
 SapientRepo     https://github.com/Kshitijtyagi/SapientRepo.git (fetch)
 SapientRepo     https://github.com/Kshitijtyagi/SapientRepo.git (push)
 
+C:\Users\kshtyagi\Documents\GITDir>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        GIT Commands Getting Started.txt
+        Hi.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\kshtyagi\Documents\GITDir>git add "GIT Commands Getting Started.txt"
+
+C:\Users\kshtyagi\Documents\GITDir>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   GIT Commands Getting Started.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Hi.html
+
+
+C:\Users\kshtyagi\Documents\GITDir>git commit "GIT Commands Getting Started.txt" -m "Basic Getting started GIT Commands and Setup"
+[master 9811f71] Basic Getting started GIT Commands and Setup
+ 1 file changed, 162 insertions(+)
+ create mode 100644 GIT Commands Getting Started.txt
+
+C:\Users\kshtyagi\Documents\GITDir>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Hi.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\kshtyagi\Documents\GITDir>git log
+commit 9811f7150956a0120d0640d9059c7b097213b8cd (HEAD -> master)
+Author: Kshitij <kshitij.tyagi@publicissapient.com>
+Date:   Tue Mar 15 10:59:43 2022 +0530
+
+    Basic Getting started GIT Commands and Setup
+
+commit 08733f69ac26aa1722f06564e065c04a2acc6a53
+Author: Kshitij <kshitij.tyagi@publicissapient.com>
+Date:   Tue Mar 15 10:31:55 2022 +0530
+
+    edited the file
+
+
+
+
+C:\Users\kshtyagi\Documents\GITDir>git log
+commit 9811f7150956a0120d0640d9059c7b097213b8cd (HEAD -> master)
+Author: Kshitij <kshitij.tyagi@publicissapient.com>
+Date:   Tue Mar 15 10:59:43 2022 +0530
+
+    Basic Getting started GIT Commands and Setup
+
+commit 08733f69ac26aa1722f06564e065c04a2acc6a53
+Author: Kshitij <kshitij.tyagi@publicissapient.com>
+Date:   Tue Mar 15 10:31:55 2022 +0530
+
+    edited the file
+
+
+
+C:\Users\kshtyagi\Documents\GITDir>git push SapientRepo master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': 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
+Password for 'https://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@github.com':
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 1.62 KiB | 127.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Kshitijtyagi/SapientRepo/pull/new/master
+remote:
+To https://github.com/Kshitijtyagi/SapientRepo.git
+ * [new branch]      master -> master
+
 C:\Users\kshtyagi\Documents\GITDir>
