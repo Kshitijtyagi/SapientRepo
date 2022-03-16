@@ -1,0 +1,154 @@
+Microsoft Windows [Version 10.0.19042.1526]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\kshtyagi\Documents\GITDir>git branch
+  master
+  secondBranch
+* thirdBranch
+
+C:\Users\kshtyagi\Documents\GITDir>git checkout master
+Switched to branch 'master'
+M       GIT Commands Getting Started.txt
+
+C:\Users\kshtyagi\Documents\GITDir>git branch
+* master
+  secondBranch
+  thirdBranch
+
+C:\Users\kshtyagi\Documents\GITDir>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   GIT Commands Getting Started.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        factorial.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\kshtyagi\Documents\GITDir>git branch featured
+
+C:\Users\kshtyagi\Documents\GITDir>git branch
+  featured
+* master
+  secondBranch
+  thirdBranch
+
+C:\Users\kshtyagi\Documents\GITDir>git checkout featured
+Switched to branch 'featured'
+M       GIT Commands Getting Started.txt
+
+C:\Users\kshtyagi\Documents\GITDir>git branch
+* featured
+  master
+  secondBranch
+  thirdBranch
+
+C:\Users\kshtyagi\Documents\GITDir>git status
+On branch featured
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   GIT Commands Getting Started.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        factorial.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\kshtyagi\Documents\GITDir>git add factorial.py
+
+C:\Users\kshtyagi\Documents\GITDir>git commit factorial.py -m "Step 2 creating featured branch, introduce Bug and commit "
+[featured a858b2d] Step 2 creating featured branch, introduce Bug and commit
+ 1 file changed, 10 insertions(+)
+ create mode 100644 factorial.py
+
+C:\Users\kshtyagi\Documents\GITDir>git branch fix
+
+C:\Users\kshtyagi\Documents\GITDir>git branch
+* featured
+  fix
+  master
+  secondBranch
+  thirdBranch
+
+C:\Users\kshtyagi\Documents\GITDir>git checkout fix
+Switched to branch 'fix'
+M       GIT Commands Getting Started.txt
+
+C:\Users\kshtyagi\Documents\GITDir>git branch
+  featured
+* fix
+  master
+  secondBranch
+  thirdBranch
+
+C:\Users\kshtyagi\Documents\GITDir>git status
+On branch fix
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   GIT Commands Getting Started.txt
+        modified:   factorial.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\kshtyagi\Documents\GITDir>git add factorial.py
+
+C:\Users\kshtyagi\Documents\GITDir>git commit factorial.py -m "step 3,make fix branch, fix bug and commit "
+[fix 5ff52f0] step 3,make fix branch, fix bug and commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\kshtyagi\Documents\GITDir>git checkout featured
+Switched to branch 'featured'
+M       GIT Commands Getting Started.txt
+
+C:\Users\kshtyagi\Documents\GITDir>git branch
+* featured
+  fix
+  master
+  secondBranch
+  thirdBranch
+
+C:\Users\kshtyagi\Documents\GITDir>git merge SapientRepo/fix
+merge: SapientRepo/fix - not something we can merge
+
+C:\Users\kshtyagi\Documents\GITDir>git merge fix
+Updating a858b2d..5ff52f0
+Fast-forward
+ factorial.py | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\kshtyagi\Documents\GITDir>git status
+On branch featured
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   GIT Commands Getting Started.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\kshtyagi\Documents\GITDir>git push SapientRepo featured
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 778 bytes | 45.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'featured' on GitHub by visiting:
+remote:      https://github.com/Kshitijtyagi/SapientRepo/pull/new/featured
+remote:
+To https://github.com/Kshitijtyagi/SapientRepo.git
+ * [new branch]      featured -> featured
+
+C:\Users\kshtyagi\Documents\GITDir>
