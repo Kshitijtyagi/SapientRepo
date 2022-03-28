@@ -1,4 +1,4 @@
-package basics;
+
 class Animal{
     private String name;
     Animal(){
